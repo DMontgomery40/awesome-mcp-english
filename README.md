@@ -1,64 +1,33 @@
 # MCP Manager
 
-## Introduction
+A clean, English version of the MCP Management Client.
 
-MCP Manager is a visual client tool for managing MCP (Model Context Protocol). With this tool, you can easily manage and operate your MCP environment without executing complex command-line operations manually.
+## Features
 
-## Key Features
-
-- 🚀 One-click environment installation
-- 📦 Visual MCP installation and uninstallation
-- 🎮 Convenient MCP start and stop management
+- 🚀 One-click environment setup
+- 📦 Visual MCP installation and management
 - 💻 Intuitive graphical interface
-- 🛠 Integrated environment configuration
+- 🛠 Integrated configuration tools
 
-## Highlights
+## Installation
 
-- User-friendly interface design
-- Automated environment configuration
-- Visualized operation process
-- Complete MCP lifecycle management
+1. Download the latest release
+2. Follow the installation guide for your platform
+3. Run the application
 
-## Usage
-
-1. Visit the [Releases page](../../releases)
-2. Download the latest version
-3. Run the downloaded package to start using
-
-## System Requirements
-
-- Currently supported: macOS
-- Coming soon: Windows (under development, expected release soon)
-
-## Installation Guide
-
-### macOS Installation Steps
-
-1. Download and open the MCP Manager.DMG file
-2. Drag MCP Manager.app to the Applications folder
-3. If you cannot open the application, double-click the "fix_permissions.command" file in the DMG to execute the fix
-
-> Note: If the "fix_permissions.command" file cannot be executed, you can also manually open the terminal and enter the following command:
+## Development
 
 ```bash
-xattr -d com.apple.quarantine /Applications/MCP\ Manager.app
+# Clone the repository
+git clone https://github.com/DMontgomery40/awesome-mcp-english.git
+
+# Enter the directory
+cd awesome-mcp-english
+
+# Install dependencies
+npm install
 ```
 
 ## License
 
-This project uses a modified GPL-3.0 license. In addition to following GPL-3.0, the following restrictions apply:
-
-1. 🚫 Commercial Use Prohibited
-   - The software may not be used for commercial purposes
-   - The software or its derivatives may not be sold
-   - The software may not be integrated into commercial products
-
-2. ✅ Permitted Uses
-   - Personal learning and research
-   - Non-commercial educational use
-   - Non-commercial sharing and improvement in the open source community
-
-3. 📝 Additional Requirements
-   - Any derivative works based on this project must also prohibit commercial use
-   - Original copyright information and license statements must be retained
-   - Any modifications to this software must be open source
+Modified GPL-3.0. See LICENSE file for details.
