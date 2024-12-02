@@ -1,24 +1,30 @@
 {
   "name": "awesome-mcp-english",
   "version": "1.0.0",
-  "description": "English version of MCP Manager - A comprehensive visual management tool for Model Context Protocol",
+  "description": "Model Context Protocol (MCP) implementation in TypeScript",
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc",
-    "start": "node dist/index.js",
     "test": "jest",
     "lint": "eslint src/**/*.ts",
-    "format": "prettier --write \"src/**/*.ts\""
+    "format": "prettier --write \"src/**/*.{ts,tsx}\"",
+    "prepare": "npm run build"
   },
   "keywords": [
     "mcp",
-    "manager",
     "model-context-protocol",
-    "visual-tool"
+    "llm",
+    "ai",
+    "context-management"
   ],
   "author": "David Montgomery",
-  "license": "GPL-3.0",
+  "license": "MIT",
+  "dependencies": {
+    "events": "^3.3.0"
+  },
   "devDependencies": {
+    "@types/events": "^3.0.0",
     "@types/jest": "^29.5.11",
     "@types/node": "^20.10.5",
     "@typescript-eslint/eslint-plugin": "^6.15.0",
