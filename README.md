@@ -1,6 +1,6 @@
 # MCP Manager
 
-**_UNSTALBE CURRNTLY_**
+**_UNSTABLE, CURRNTLY_**
 
 Original repository by @petiky with important security and transparency enhancements, when build is finished.  The install will be free on opaque Chinese characters that have no error handling
 
