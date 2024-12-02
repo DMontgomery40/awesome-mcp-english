@@ -1,6 +1,8 @@
 # MCP Manager
 
-[English](README.md) | [中文](README_zh.md)
+**_UNSTALBE CURRNTLY_**
+
+Original repository by @petiky with important security and transparency enhancements, when build is finished.  The install will be free on opaque Chinese characters that have no error handling
 
 A comprehensive visual management tool for Model Context Protocol (MCP), providing an intuitive graphical interface for managing your MCP environment.
 
