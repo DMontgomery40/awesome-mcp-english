@@ -1,0 +1,35 @@
+name: Quality Checks
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  quality-checks:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Check for Chinese Characters
+      run: |
+        ! find . -type f -name "*.ts" -o -name "*.tsx" -o -name "*.js" -o -name "*.jsx" | xargs grep -l "[\u4e00-\u9fff]"
+
+    - name: Check File Encodings
+      run: |
+        # Look for UTF-16 files but don't fail if none found
+        find . -type f -exec file {} \; | grep -i "utf-16" || true
+
+    - name: Check Line Endings
+      run: |
+        ! find . -type f -name "*.ts" -o -name "*.tsx" -o -name "*.js" -o -name "*.jsx" | xargs file | grep "CRLF"
+
+    - name: Lint Markdown Files
+      run: |
+        npx markdownlint-cli "**/*.md" || true
+
+    - name: Check Links
+      run: |
+        npx markdown-link-check "**/*.md" || true
