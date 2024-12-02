@@ -6,17 +6,6 @@ Original repository by @petiky with important security and transparency enhancem
 
 A comprehensive visual management tool for Model Context Protocol (MCP), providing an intuitive graphical interface for managing your MCP environment.
 
-## Features
-
-- 🚀 One-click environment installation
-- 📦 Visual MCP installation and management
-- 💻 Intuitive graphical interface
-- 🛠 Integrated configuration tools
-- 🔄 Real-time status monitoring
-- 🌙 Dark mode support
-- 🖥 Cross-platform (macOS, Windows, Linux)
-- 🔒 Secure and reliable
-
 ## Installation
 
 ### Prerequisites
