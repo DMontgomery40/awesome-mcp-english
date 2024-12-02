@@ -10,31 +10,13 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
-    strategy:
-      matrix:
-        node-version: [16.x, 18.x]
-
     steps:
     - uses: actions/checkout@v3
     
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v3
+    - uses: actions/setup-node@v3
       with:
-        node-version: ${{ matrix.node-version }}
-
-    - name: Install pnpm
-      uses: pnpm/action-setup@v2
-      with:
-        version: latest
+        node-version: '18.x'
+        cache: 'npm'
         
-    - name: Install dependencies
-      run: pnpm install --no-frozen-lockfile
-      
-    - name: Build
-      run: pnpm run build || true
-      
-    - name: Test
-      run: pnpm run test || true
-      
-    - name: Lint
-      run: pnpm run lint || true
+    - run: npm ci
+    - run: npm run build
