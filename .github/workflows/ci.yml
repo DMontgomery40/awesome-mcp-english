@@ -21,16 +21,33 @@ jobs:
       uses: actions/setup-node@v3
       with:
         node-version: ${{ matrix.node-version }}
-        cache: 'npm'
+
+    - name: Install pnpm
+      uses: pnpm/action-setup@v2
+      with:
+        version: latest
         
+    - name: Get pnpm store directory
+      shell: bash
+      run: |
+        echo "STORE_PATH=$(pnpm store path)" >> $GITHUB_ENV
+
+    - name: Setup pnpm cache
+      uses: actions/cache@v3
+      with:
+        path: ${{ env.STORE_PATH }}
+        key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
+        restore-keys: |
+          ${{ runner.os }}-pnpm-store-
+
     - name: Install dependencies
-      run: npm ci
+      run: pnpm install
       
     - name: Build
-      run: npm run build
+      run: pnpm run build
       
     - name: Test
-      run: npm test
+      run: pnpm run test
       
     - name: Lint
-      run: npm run lint
+      run: pnpm run lint
