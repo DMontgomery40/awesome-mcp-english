@@ -1,2 +1,1 @@
-// Service exports will go here
-export {};
+export * from './installation';
