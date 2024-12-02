@@ -1,25 +1,40 @@
-# Dependencies
-node_modules/
-package-lock.json
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
 
-# Build outputs
-dist/
-build/
+node_modules
+dist
+dist-ssr
+*.local
 
-# IDE files
-.vscode/
-.idea/
-*.swp
-*.swo
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
 
 # Environment variables
 .env
-.env.local
+.env.*
+!.env.example
 
-# Logs
-*.log
-npm-debug.log*
+# Rust / Tauri
+target/
+src-tauri/target/
+WixTools/
 
-# OS specific
-.DS_Store
-Thumbs.db
+# Testing
+coverage/
+
+# Build
+build/

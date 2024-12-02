@@ -1,49 +1,72 @@
 # MCP Manager
 
-This is an English-language fork of [petiky's awesome-mcp](https://github.com/petiky/awesome-mcp).
+[English](README.md) | [中文](README_zh.md)
 
-## Changes from Original
-
-- Converted all content from Chinese to English
-- Added comprehensive character encoding checks
-- Enhanced build and CI/CD workflows
-- Added detailed documentation
-- Improved script organization and error handling
-- Added automated setup scripts
+A comprehensive visual management tool for Model Context Protocol (MCP), providing an intuitive graphical interface for managing your MCP environment.
 
 ## Features
 
-- 🚀 One-click environment setup
+- 🚀 One-click environment installation
 - 📦 Visual MCP installation and management
 - 💻 Intuitive graphical interface
 - 🛠 Integrated configuration tools
+- 🔄 Real-time status monitoring
+- 🌙 Dark mode support
+- 🖥 Cross-platform (macOS, Windows, Linux)
+- 🔒 Secure and reliable
 
 ## Installation
 
-1. Download the latest release
-2. Follow the installation guide for your platform
-3. Run the application
+### Prerequisites
+- Node.js 16+
+- Rust
+- pnpm or npm
 
-## Development
-
+### Quick Start
 ```bash
 # Clone the repository
 git clone https://github.com/DMontgomery40/awesome-mcp-english.git
 
-# Enter the directory
+# Enter project directory
 cd awesome-mcp-english
 
-# Run setup script
-./setup.sh
+# Install dependencies
+pnpm install
+
+# Start development
+pnpm tauri dev
 ```
+
+### Building
+```bash
+pnpm tauri build
+```
+
+## Usage
+
+1. Launch MCP Manager
+2. Configure your environment settings
+3. Start managing your MCP instances
+4. Monitor status and performance
+
+## Development
+
+This project uses:
+- Tauri for cross-platform native app
+- React for UI
+- TypeScript for type safety
+- shadcn/ui for components
+- Tailwind CSS for styling
+
+## Contributing
+
+Contributions are welcome! Please read our [Contributing Guide](CONTRIBUTING.md) first.
+
+## License
+
+Modified GPL-3.0 License - See [LICENSE](LICENSE) for details.
 
 ## Credits
 
 Original repository by [@petiky](https://github.com/petiky)
-English translation and enhancements by [@DMontgomery40](https://github.com/DMontgomery40)
-
-## License
-
-Modified GPL-3.0. See LICENSE file for details.
-
-Note: This fork maintains the original license terms while providing an English-language version of the tools and documentation.
+English version and enhancements by [@DMontgomery40](https://github.com/DMontgomery40)

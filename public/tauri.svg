@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="256px" height="256px" viewBox="0 0 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid">
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="tauri-gradient">
+            <stop stop-color="#FFC131" offset="0%"></stop>
+            <stop stop-color="#FF9F2E" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g>
+        <path d="M147.705882,0 L256,256 L0,256 L108.294118,0 L147.705882,0 Z M128,51.2 L41.0823529,230.4 L214.917647,230.4 L128,51.2 Z" fill="url(#tauri-gradient)"></path>
+    </g>
+</svg>
